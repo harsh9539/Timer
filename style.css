@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(230deg,#5e0bf9,#9b2be9);
+    
+}
+
+.container{
+    min-height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.div{
+    display: flex;
+    line-height: 0.3;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.h1{
+    background-color: rgba(255, 255, 255, .1);
+    box-shadow: 0 25px 45px rgba(0,0,0,.1),
+                -0 -25px 45px rgba(0,0,0,.1);
+    border: 1px solid rgba(255, 255, 255, .5);
+    border-right: 1px solid rgba(255, 255, 255, .2);
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(25px);
+    border-radius: 10px;
+    padding: 10px;
+
+}
+h1{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+h2{
+    color: white;
+    word-spacing: 10px;
+    font-weight: 100;
+}
+.launch-time{
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+.launch-time div{
+    text-align: center;
+}
+.launch-time div p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    border-radius: 10px;
+    margin: 2rem;
+    height: 3rem;
+    width: 3rem;
+    text-align: center;
+    padding: 0.8rem;
+    box-shadow: -2px -2px 10px rgba(255,255,255,0.7),
+    inset -5px -5px 10px rgba(0,0,0,0.4);
+}
+
+.launch-time div p{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.launch-time div span{
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-shadow: 2px 2px 5px #5e0bf9;
+}
+button{
+    margin-top: 5%;
+    background-color: rgba(255, 255, 255, .1);
+    box-shadow: 0 25px 45px rgba(0,0,0,.1),
+                -0 -25px 45px rgba(0,0,0,.1);
+    border: 1px solid rgba(255, 255, 255, .5);
+    border-right: 1px solid rgba(255, 255, 255, .2);
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    
+}
+button:hover{
+    animation: animate 0.5s ease-in 1;
+}
+
+@keyframes animate {
+    0%{
+        transform: translateY(0px);
+    }
+    25%{
+        transform: translateY(-2px);
+    }
+    50%{
+        transform: translateY(-4px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+
+#footer{
+    color: rgba(255, 255, 255, .5);
+    text-align: center;
+    word-spacing: 5px;
+}
+#footer a{
+    color: rgba(255, 255, 255, .5);
+    text-decoration: none;
+}
+
+@media screen and (max-width:548px){
+    .launch-time div p{
+        margin: 1rem;
+    }
+    button{
+        margin-top: 10%;
+    }
+}
+
+@media screen and (max-width:444px){
+    .launch-time div p{
+        margin: 1rem 0.7rem 1.5rem;
+    }
+
+}
+
+@media screen and (max-width:400px){
+    .launch-time div p{
+        margin: 1rem 0.5rem 1.5rem;
+    }
+    h2{
+        font-size: 1.3rem;
+    }
+}
